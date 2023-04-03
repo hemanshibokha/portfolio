@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio Website</title>
+  <link rel="stylesheet" href="css/animate.min.css">
+  <!-- fonts -->
+  <link rel="stylesheet" href="css/fonts.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-color">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item p-2">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item p-2">
+            <a class="nav-link text-white-50" aria-current="page" href="#">Features</a>
+          </li>
+          <li class="nav-item p-2">
+            <a class="nav-link  text-white-50" aria-current="page" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item p-2">
+            <a class="nav-link  text-white-50" aria-current="page" href="#">Resume</a>
+          </li>
+          <li class="nav-item p-2">
+            <a class="nav-link  text-white-50" aria-current="page" href="#">Testimonial</a>
+          </li>
+          <li class="nav-item p-2">
+            <a class="nav-link text-white-50" aria-current="page" href="#">Clients</a>
+          </li>
+          <li class="nav-item p-2">
+            <a class="nav-link  text-white-50" aria-current="page" href="#">Pricing</a>
+          </li>
+          <li class="nav-item p-2">
+            <a class="nav-link  text-white-50" aria-current="page" href="#">Blog</a>
+          </li>
+          <li class="nav-item p-2">
+            <a class="nav-link  text-white-50" aria-current="page" href="#">Contacts</a>
+          </li>
+        </ul>
+      </div>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <div><i class="fa-solid fa-cart-shopping text-white cart me-3  d-none d-lg-block"></i></div>
+      </button>
+      <!-- modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-backdrop="static">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Your Cart is Empty...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="dot bg-danger text-white">0</div> -->
+      <button class="text-danger buynow d-none d-xl-block">BUY NOW</button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="btn btn-dark ms-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+          aria-controls="offcanvasExample">
+          <i class="fa-solid fa-bars navbar-toggler-icon text-white"></i>
+        </button>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- off canvas -->
+  <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header border-bottom border-light">
+      <img src="img/logos-circle.png" alt="">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <h5 class="offcanvas-title text-white mt-3" id="offcanvasExampleLabel">Inbio is a all in one personal portfolio
+        WordPress theme. You can customize everything.</h5>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item p-2">
+          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link text-white" aria-current="page" href="#">Features</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link  text-white" aria-current="page" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link text-white" aria-current="page" href="#">Resume</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link text-white" aria-current="page" href="#">Testimonial</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link text-white" aria-current="page" href="#">Clients</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link text-white" aria-current="page" href="#">Pricing</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link text-white" aria-current="page" href="#">Blog</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link text-white" aria-current="page" href="#">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- owlcursoul -->
+  <div id="carouselExampleControls" class="carousel slide pt-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-xl-8 banner-content ps-5">
+              <span>WELCOME TO MY WORLD</span>
+              <h2 class="my-4">Hi, I’m <span>Jone Lee</span><br> a Developer.</h2>
+              <p>I use animation as a third dimension by which to simplify experiences and kuiding thro each and every
+                interaction. I’m not adding motion just to spruce things up, but doing it in ways that.</p>
+              <div class="row pt-5">
+                <div class="col-12 col-sm-6 row my-3">
+                  <span class="d-block pb-3">FIND WITH ME</span>
+                  <div class="box1">
+                    <div><i class="fa-brands fa-instagram"></i></div>
+                  </div>
+                  <div class="box1 mx-3">
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                  </div>
+                  <div class="box1">
+                    <div><i class="fa-brands fa-linkedin-in"></i></div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6  row my-3">
+                  <span class="d-block pb-3">
+                    BEST SKILL ON</span>
+                  <div class="box">
+                    <div>
+                      <img src="img/icons-01.png" alt="" width="25px">
+                    </div>
+                  </div>
+                  <div class="box mx-3">
+                    <div>
+                      <img src="img/icons-02.png" alt="" width="25px">
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div>
+                      <img src="img/icons-03.png" alt="" width="22px">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-4 my-5">
+              <div class="slider-img">
+                <img src="img/banner-01.png" alt="" class="d-block w-100">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- horizontal line -->
+  <div class="container pt-5 pb-5 ">
+    <hr class="text-light">
+  </div>
+
+  <!-- features-what-do -->
+  <section class="what-do">
+    <div class="container">
+      <span>FEATURES</span>
+      <h2 class="pt-3 pb-4">What I Do</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="about p-5">
+            <div class="content">
+              <i class="fa-solid fa-bars"></i>
+              <h5 class="pt-3">Business Stratagy</h5>
+              <p class="pt-2"> I throw myself down among the tall grass by the stream as Ilie close to the earth.</p>
+              <i class="fa-solid fa-arrow-right pt-2"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="about p-5">
+            <div class="content">
+              <i class="fa-solid fa-book-open"></i>
+              <h5 class="pt-3">App Development</h5>
+              <p class="pt-2"> We’ll handle everything from to app development process until it is time to make your
+                project live. </p>
+              <i class="fa-solid fa-arrow-right pt-2"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="about p-5">
+            <div class="content">
+              <i class="fa-solid fa-tv"></i>
+              <h5 class="pt-3">Business Stratagy</h5>
+              <p class="pt-2"> We’ll help you optimize your business to maximize profitability and eliminate
+                unnecessary costs</p>
+              <i class="fa-solid fa-arrow-right pt-2"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="about p-5">
+            <div class="content">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <h5 class="pt-3">Mobile App</h5>
+              <p class="pt-2"> Using our expertise in mobile application development to create beautiful pixel-perfect
+                designs.</p>
+              <i class="fa-solid fa-arrow-right pt-2"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="about p-5">
+            <div class="content">
+              <i class="fa-solid fa-database"></i>
+              <h5 class="pt-3">SEO Optimisation</h5>
+              <p class="pt-2"> Your website ranking matters. Our SEO services will help you get to the top of the ranks
+                and stay there!</p>
+              <i class="fa-solid fa-arrow-right pt-2"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="about p-5">
+            <div class="content">
+              <i class="fa-brands fa-codepen"></i>
+              <h5 class="pt-3">UX Consulting</h5>
+              <p class="pt-2"> A UX consultant is responsible for many of the same tasks as a UX designer, but they
+                typically.</p>
+              <i class="fa-solid fa-arrow-right pt-2"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- horizontal line -->
+  <div class="container pt-5 pb-5 ">
+    <hr class="text-light">
+  </div>
+
+  <!-- portfolio -->
+  <section class="portfolio">
+    <div class="container">
+      <div class="title">
+        <span>VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</span>
+        <h2 class="pt-2 pb-5">My Portfolio</h2>
+      </div>
+      <div class="row g-5">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card p-5">
+            <div class="card-img">
+              <img src="img/portfolio-large-01-340x250.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body justify-content-between d-flex pt-4">
+              <span class="d-block">GALLERY</span>
+              <a href="#">
+                <i class="fa-regular fa-heart"></i>
+                261
+              </a>
+            </div>
+            <div class="card-title pt-3">
+              <a href="#">
+                NFT Dashboard Application Development.
+                <i class="fa-solid fa-arrow-up ps-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card p-5">
+            <div class="card-img">
+              <img src="img/portfolio-large-02-340x250.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body justify-content-between d-flex pt-4">
+              <span class="d-block">VIDEO</span>
+              <a href="#">
+                <i class="fa-regular fa-heart"></i>
+                254
+              </a>
+            </div>
+            <div class="card-title pt-3">
+              <a href="#">
+                Online Food Delivery Mobile App Design.
+                <i class="fa-solid fa-arrow-up ps-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card p-5">
+            <div class="card-img">
+              <img src="img/portfolio-large-03-340x250.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body justify-content-between d-flex pt-4">
+              <span class="d-block">EXTERNAL LINK</span>
+              <a href="#">
+                <i class="fa-regular fa-heart"></i>
+                86
+              </a>
+            </div>
+            <div class="card-title pt-3">
+              <a href="#">
+                Travel App Design Creativity & Application.
+                <i class="fa-solid fa-arrow-up ps-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card p-5">
+            <div class="card-img">
+              <img src="img/portfolio-large-04-800x600.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body justify-content-between d-flex pt-4">
+              <span class="d-block">IMAGE</span>
+              <a href="#">
+                <i class="fa-regular fa-heart"></i>
+                120
+              </a>
+            </div>
+            <div class="card-title pt-3">
+              <a href="#">
+                Workout Website Design And Development.
+                <i class="fa-solid fa-arrow-up ps-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card p-5">
+            <div class="card-img">
+              <img src="img/portfolio-large-05-800x600.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body justify-content-between d-flex pt-4">
+              <span class="d-block">GALLERY</span>
+              <a href="#">
+                <i class="fa-regular fa-heart"></i>
+                141
+              </a>
+            </div>
+            <div class="card-title pt-3">
+              <a href="#">
+                Mobile Application Landing Page Design.
+                <i class="fa-solid fa-arrow-up ps-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card p-5">
+            <div class="card-img">
+              <img src="img/portfolio-large-06-340x250.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body justify-content-between d-flex pt-4">
+              <span class="d-block">STANDARD</span>
+              <a href="#">
+                <i class="fa-regular fa-heart"></i>
+                81
+              </a>
+            </div>
+            <div class="card-title pt-3">
+              <a href="#">
+                Restaurant Mobile Application Figma Design
+                <i class="fa-solid fa-arrow-up ps-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- horizontal line -->
+  <div class="container pt-5 pb-5 ">
+    <hr class="text-light">
+  </div>
+
+  <!-- resume -->
+  <section>
+    <div class="container">
+      <div class="title">
+        <span>7+ YEARS OF EXPERIENCE</span>
+        <h2 class="pt-2 pb-5">My Resume</h2>
+      </div>
+      <div class="row">
+        <ul class="nav nav-tabs justify-content-between" id="myTab" role="tablist">
+          <li class="nav-item col-6 col-md-3" role="presentation">
+            <button class="nav-link active w-100" id="education-tab" data-bs-toggle="tab" data-bs-target="#education"
+              type="button" role="tab" aria-controls="home" aria-selected="true">Education</button>
+          </li>
+          <li class="nav-item col-6 col-md-3" role="presentation">
+            <button class="nav-link w-100" id="skill-tab" data-bs-toggle="tab" data-bs-target="#skill" type="button"
+              role="tab" aria-controls="profile" aria-selected="false">Professional Skills</button>
+          </li>
+          <li class="nav-item col-6 col-md-3" role="presentation">
+            <button class="nav-link w-100" id="experience-tab" data-bs-toggle="tab" data-bs-target="#experience"
+              type="button" role="tab" aria-controls="contact" aria-selected="false">Experience</button>
+          </li>
+          <li class="nav-item col-6 col-md-3" role="presentation">
+            <button class="nav-link w-100" id="interview-tab" data-bs-toggle="tab" data-bs-target="#interview"
+              type="button" role="tab" aria-controls="contact" aria-selected="false">Interview</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active text-danger" id="education" role="tabpanel"
+            aria-labelledby="education-tab">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="edu-title py-5">
+                  <span>1998 - 2010</span>
+                  <h2 class="pt-3">Education Quality</h2>
+                </div>
+                <div class="education">
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>BSc in Computer Science</h5>
+                        <h6>University of DVI (2006 - 2010)</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">3.90/4</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">The training provided by universities in order to prepare people to work in various
+                      sectors of the
+                      economy or areas of culture.</p>
+                  </div>
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>AS - Science & Information</h5>
+                        <h6>SuperKing College (2001 - 2005)</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">4.75/5</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">Higher education is tertiary education leading to award of an academic degree.
+                      Higher education, also called post-secondary education.</p>
+                  </div>
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>Secondary School Education</h5>
+                        <h6>Kingstar Secondary School (1998 - 2000)</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">5.00/5</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">Secondary education or post-primary education covers two phases on the International
+                      Standard Classification of Education scale.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 ps-5">
+                <div class="edu-title py-5">
+                  <span>2010 - 2022</span>
+                  <h2 class="pt-3">Job Experience</h2>
+                </div>
+                <div class="education">
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>Sr. Software Engineer</h5>
+                        <h6>Google Out Tech - (2017 - Present)</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">USA</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">Google’s hiring process is an important part of our culture. Googlers care deeply
+                      about their teams and the people who make them up.</p>
+                  </div>
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>Web Developer & Trainer</h5>
+                        <h6>Apple Developer Team - (2012 - 2016)</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">MALAYSIA</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">A popular destination with a growing number of highly qualified homegrown graduates,
+                      it's true that securing a role in Malaysia isn't easy.</p>
+                  </div>
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>Front-end Developer</h5>
+                        <h6>Nike - (2020 - 2011)</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">INDIA</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">The India economy has grown strongly over recent years, having transformed itself
+                      from a producer and innovation-based economy.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade text-light" id="skill" role="tabpanel" aria-labelledby="skill-tab">
+            <div class="row">
+              <div class="col-12 col-md-6 px-5">
+                <div class="edu-title py-5">
+                  <span>Features</span>
+                  <h2 class="pt-3">Development Skill</h2>
+                </div>
+                <h6>PHOTOSHOT</h6>
+                <div class="progress my-4">
+                  <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar"
+                    style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <span class=" wow animate__animated animate__fadeInLeft">100%</span>
+                  </div>
+                </div>
+                <h6>FIGMA</h6>
+                <div class="progress my-4">
+                  <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar"
+                    style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>ADOBE XD.</h6>
+                <div class="progress my-4">
+                  <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar"
+                    style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>ADOBE ILLUSTRATOR</h6>
+                <div class="progress my-4">
+                  <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar"
+                    style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>DESIGN</h6>
+                <div class="progress my-4">
+                  <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar"
+                    style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 px-5">
+                <div class="edu-title py-5">
+                  <span>Features</span>
+                  <h2 class="pt-3">Development Skill</h2>
+                </div>
+                <h6>PHOTOSHOT</h6>
+                <div class="progress my-4">
+                  <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar"
+                    style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <span class=" wow animate__animated animate__fadeInLeft">100%</span>
+                  </div>
+                </div>
+                <h6>FIGMA</h6>
+                <div class="progress my-4">
+                  <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar"
+                    style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>ADOBE XD.</h6>
+                <div class="progress my-4">
+                  <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar"
+                    style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>ADOBE ILLUSTRATOR</h6>
+                <div class="progress my-4">
+                  <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar"
+                    style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>DESIGN</h6>
+                <div class="progress my-4">
+                  <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar"
+                    style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade text-white-50" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="edu-title py-5">
+                  <span>2010 - 2022</span>
+                  <h2 class="pt-3">Job Experience</h2>
+                </div>
+                <div class="education">
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>Sr. Software Engineer</h5>
+                        <h6>Google Out Tech - (2017 - Present)</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">USA</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">Google’s hiring process is an important part of our culture. Googlers care deeply
+                      about their teams and the people who make them up.</p>
+                  </div>
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>Web Developer & Trainer</h5>
+                        <h6>Apple Developer Team - (2012 - 2016)</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">MALAYSIA</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">A popular destination with a growing number of highly qualified homegrown graduates,
+                      it's true that securing a role in Malaysia isn't easy.</p>
+                  </div>
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>Front-end Developer</h5>
+                        <h6>Nike - (2020 - 2011)</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">INDIA</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">The India economy has grown strongly over recent years, having transformed itself
+                      from a producer and innovation-based economy.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 ps-5">
+                <div class="edu-title py-5">
+                  <span>2001 - 2020</span>
+                  <h2 class="pt-3">Trainer Experience</h2>
+                </div>
+                <div class="education">
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>Gym Instructor</h5>
+                        <h6>Rainbow Gym Center (2015 - 2020)</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">DHAKA</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">The training provided by universities in order to prepare people to work in various
+                      sectors of the economy or areas of culture.</p>
+                  </div>
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>Web Developer and Instructor</h5>
+                        <h6>SuperKing College (2010 - 2014)</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">CANADA</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">Higher education is tertiary education leading to award of an academic degree.
+                      Higher education, also called post-secondary education.</p>
+                  </div>
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>School Teacher</h5>
+                        <h6>NKingstar Secondary School (2001 - 2010)</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">NEVADA</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">Secondary education or post-primary education covers two phases on the International
+                      Standard Classification of Education scale.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="interview" role="tabpanel" aria-labelledby="interview-tab">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="edu-title py-5">
+                  <span>2007 - 2010</span>
+                  <h2 class="pt-3">Company Experience</h2>
+                </div>
+                <div class="education">
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>Personal Portfolio April Fools</h5>
+                        <h6>University of DVI (1997 - 2001)</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">4.30/5</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales.
+                      Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.</p>
+                  </div>
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>Examples Of Personal Portfolio</h5>
+                        <h6>University of DVI (1997 - 2001)</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">4.30/5</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales.
+                      Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.</p>
+                  </div>
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>Tips For Personal Portfolio</h5>
+                        <h6>University of DVI (1997 - 2001))</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">4.30/5</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales.
+                      Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 ps-5">
+                <div class="edu-title py-5">
+                  <span>2007 - 2010</span>
+                  <h2 class="pt-3">Job Experience</h2>
+                </div>
+                <div class="education">
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>Personal Portfolio April Fools</h5>
+                        <h6>University of DVI (1997 - 2001)</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">4.30/5</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales.
+                      Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.</p>
+                  </div>
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>Examples Of Personal Portfolio</h5>
+                        <h6>University of DVI (1997 - 2001))</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">4.30/5</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales.
+                      Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante</p>
+                  </div>
+                  <div class="resume my-4">
+                    <div class="heading d-flex align-items-cente justify-content-between">
+                      <div class="left">
+                        <h5>Tips For Personal Portfolio</h5>
+                        <h6>University of DVI (1997 - 2001))</h6>
+                      </div>
+                      <div class="right">
+                        <a href="#">4.30/5</a>
+                      </div>
+                    </div>
+                    <p class="pt-4">The India economy has grown strongly over recent years, having transformed itself
+                      from a producer and innovation-based economy.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- horizontal line -->
+  <div class="container pt-5 pb-5 ">
+    <hr class="text-light">
+  </div>
+
+  <!-- testimonial -->
+  <div class="title">
+    <span>WHAT CLIENTS SAY</span>
+    <h2 class="pt-2 pb-5">Testimonial</h2>
+  </div>
+  <div id="testimonial" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <section>
+          <div class="container">
+            <div class="row testimonial">
+              <div class="col-lg-5">
+                <div class="card p-5">
+                  <div class="card-img">
+                    <img src="img/final-home-1st.png" class="card-img-top" alt="">
+                  </div>
+                  <div class="card-body justify-content-between d-flex pt-4">
+                    <span class="d-block">Rainbow-Themes</span>
+                  </div>
+                  <div class="card-title pt-2">
+                    <h3>Nevine Acotanza</h3>
+                    <h6>Chief Operating Office</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="d-md-block col-lg-7 d-none my-3">
+                <div class="col-12 d-flex justify-content-between">
+                  <i class="fa-solid fa-quote-right"></i>
+                  <div class="aero d-flex">
+                    <a href="#">
+                      <div class="left mx-3">
+                        <i class="fa-solid fa-arrow-left"></i>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="right">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="testimonial-content p-5">
+                    <div class="heading d-flex justify-content-between">
+                      <div class="left">
+                        <h4> Android App Development</h4>
+                        <h5>via Upwork - Mar 4, 2015 - Aug 30, 2021 test</h5>
+                      </div>
+                      <div class="right">
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="py-2">
+                      <hr class="text-light">
+                    </div>
+                    <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris
+                      hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales
+                      phasellus smauris test</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="carousel-item">
+        <section>
+          <div class="container">
+            <div class="row testimonial">
+              <div class="col-lg-5">
+                <div class="card p-5">
+                  <div class="card-img">
+                    <img src="img/final-home-3rd.png" class="card-img-top" alt="">
+                  </div>
+                  <div class="card-body justify-content-between d-flex pt-4">
+                    <span class="d-block">Rainbow-Themes</span>
+                  </div>
+                  <div class="card-title pt-2">
+                    <h3>Nevine Acotanza</h3>
+                    <h6>Chief Operating Office</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="d-md-block col-lg-7 d-none my-3">
+                <div class="col-12 d-flex justify-content-between">
+                  <i class="fa-solid fa-quote-right"></i>
+                  <div class="aero d-flex">
+                    <a href="#">
+                      <div class="left mx-3">
+                        <i class="fa-solid fa-arrow-left"></i>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="right">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="testimonial-content p-5">
+                    <div class="heading d-flex justify-content-between">
+                      <div class="left">
+                        <h4> Android App Development</h4>
+                        <h5>via Upwork - Mar 4, 2015 - Aug 30, 2021 test</h5>
+                      </div>
+                      <div class="right">
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="py-2">
+                      <hr class="text-light">
+                    </div>
+                    <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris
+                      hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales
+                      phasellus smauris test</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="carousel-item">
+        <section>
+          <div class="container">
+            <div class="row testimonial">
+              <div class="col-lg-5">
+                <div class="card p-5">
+                  <div class="card-img">
+                    <img src="img/final-home-2nd-1.png" class="card-img-top" alt="">
+                  </div>
+                  <div class="card-body justify-content-between d-flex pt-4">
+                    <span class="d-block">Rainbow-Themes</span>
+                  </div>
+                  <div class="card-title pt-2">
+                    <h3>Nevine Acotanza</h3>
+                    <h6>Chief Operating Office</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="d-md-block col-lg-7 d-none my-3">
+                <div class="col-12 d-flex justify-content-between">
+                  <i class="fa-solid fa-quote-right"></i>
+                  <div class="aero d-flex">
+                    <a href="#">
+                      <div class="left mx-3">
+                        <i class="fa-solid fa-arrow-left"></i>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="right">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="testimonial-content p-5">
+                    <div class="heading d-flex justify-content-between">
+                      <div class="left">
+                        <h4> Android App Development</h4>
+                        <h5>via Upwork - Mar 4, 2015 - Aug 30, 2021 test</h5>
+                      </div>
+                      <div class="right">
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="py-2">
+                      <hr class="text-light">
+                    </div>
+                    <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris
+                      hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales
+                      phasellus smauris test</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- horizontal line -->
+  <div class="container py-5">
+    <hr class="text-light">
+  </div>
+
+  <section class="clients">
+    <div class="container">
+      <span>POPULAR CLIENTS</span>
+      <h2 class="pt-3 pb-4">Awesome Clients</h2>
+      <div class="row">
+        <div class="col-12 col-md-4 p-3">
+          <ul class="nav nav-tabs justify-content-between" id="myTab" role="tablist">
+            <li class="nav-item col-12 " role="presentation">
+              <button class="nav-link active w-100" id="js-tab" data-bs-toggle="tab" data-bs-target="#js" type="button"
+                role="tab" aria-controls="home" aria-selected="true">JavaScript</button>
+            </li>
+            <li class="nav-item col-12" role="presentation">
+              <button class="nav-link w-100" id="pd-tab" data-bs-toggle="tab" data-bs-target="#pd" type="button"
+                role="tab" aria-controls="profile" aria-selected="false">Product Design</button>
+            </li>
+            <li class="nav-item col-12" role="presentation">
+              <button class="nav-link w-100" id="wp-tab" data-bs-toggle="tab" data-bs-target="#wp" type="button"
+                role="tab" aria-controls="contact" aria-selected="false">WordPress</button>
+            </li>
+            <li class="nav-item col-12" role="presentation">
+              <button class="nav-link w-100" id="htr-tab" data-bs-toggle="tab" data-bs-target="#htr" type="button"
+                role="tab" aria-controls="contact" aria-selected="false">HTML to React</button>
+            </li>
+            <li class="nav-item col-12" role="presentation">
+              <button class="nav-link w-100" id="rtl-tab" data-bs-toggle="tab" data-bs-target="#rtl" type="button"
+                role="tab" aria-controls="home" aria-selected="true">React To Laravel</button>
+            </li>
+            <li class="nav-item col-12" role="presentation">
+              <button class="nav-link w-100" id="python-tab" data-bs-toggle="tab" data-bs-target="#python" type="button"
+                role="tab" aria-controls="home" aria-selected="true">Python</button>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-8 row">
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <div class="clint-content text-center p-4">
+              <img src="img/client5.png" alt="">
+              <div class=" py-1">
+                <hr class="text-light">
+              </div>
+              <span class="text-danger">
+                <a href="#">John Due</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <div class="clint-content text-center p-4">
+              <img src="img/client1-1.png" alt="">
+              <div class=" py-1">
+                <hr class="text-light">
+              </div>
+              <span class="text-danger">
+                <a href="#">Smiths Marth</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <div class="clint-content text-center p-4">
+              <img src="img/client3.png" alt="">
+              <div class=" py-1">
+                <hr class="text-light">
+              </div>
+              <span class="text-danger">
+                <a href="#">Add Dev</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <div class="clint-content text-center p-4">
+              <img src="img/client5.png" alt="">
+              <div class=" py-1">
+                <hr class="text-light">
+              </div>
+              <span class="text-danger">
+                <a href="#">John Due</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <div class="clint-content text-center p-4">
+              <img src="img/client3.png" alt="">
+              <div class=" py-1">
+                <hr class="text-light">
+              </div>
+              <span class="text-danger">
+                <a href="#">Adon Smith</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <div class="clint-content text-center p-4">
+              <img src="img/client4.png" alt="">
+              <div class=" py-1">
+                <hr class="text-light">
+              </div>
+              <span class="text-danger">
+                <a href="#">John Due</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <div class="clint-content text-center p-4">
+              <img src="img/client1-1.png" alt="">
+              <div class=" py-1">
+                <hr class="text-light">
+              </div>
+              <span class="text-danger">
+                <a href="#">Smitha Mila</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <div class="clint-content text-center p-4">
+              <img src="img/client2.png" alt="">
+              <div class=" py-1">
+                <hr class="text-light">
+              </div>
+              <span class="text-danger">
+                <a href="#">Sultana Mila</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <div class="clint-content text-center p-4">
+              <img src="img/client3.png" alt="">
+              <div class=" py-1">
+                <hr class="text-light">
+              </div>
+              <span class="text-danger">
+                <a href="#">Jannat</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <div class="clint-content text-center p-4">
+              <img src="img/client4.png" alt="">
+              <div class=" py-1">
+                <hr class="text-light">
+              </div>
+              <span class="text-danger">
+                <a href="#">John Due</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <div class="clint-content text-center p-4">
+              <img src="img/client5.png" alt="">
+              <div class=" py-1">
+                <hr class="text-light">
+              </div>
+              <span class="text-danger">
+                <a href="#">Marth Smiths</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <div class="clint-content text-center p-4">
+              <img src="img/client1-1.png" alt="">
+              <div class=" py-1">
+                <hr class="text-light">
+              </div>
+              <span class="text-danger">
+                <a href="#">John Due</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- horizontal line -->
+  <div class="container py-5">
+    <hr class="text-light">
+  </div>
+
+  <!-- pricing -->
+  <section class="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="col-5 ">
+          <div class="pricing-title py-5">
+            <span>PRICING</span>
+            <h2 class="pt-3 pb-4">My Pricing</h2>
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="row p-4">
+            <ul class="nav nav-tabs justify-content-between" id="myTab" role="tablist">
+              <li class="nav-item col-4" role="presentation">
+                <button class="nav-link active w-100" id="static-tab" data-bs-toggle="tab" data-bs-target="#static"
+                  type="button" role="tab" aria-controls="home" aria-selected="true">Static</button>
+              </li>
+              <li class="nav-item col-4" role="presentation">
+                <button class="nav-link w-100" id="standard-tab" data-bs-toggle="tab" data-bs-target="#standard"
+                  type="button" role="tab" aria-controls="profile" aria-selected="false">Standard</button>
+              </li>
+              <li class="nav-item col-4" role="presentation">
+                <button class="nav-link w-100" id="premium-tab" data-bs-toggle="tab" data-bs-target="#premium"
+                  type="button" role="tab" aria-controls="contact" aria-selected="false">Premium</button>
+              </li>
+            </ul>
+            <div class="tab-content p-5" id="myTabContent">
+              <div class="tab-pane fade show active text-danger" id="static" role="tabpanel"
+                aria-labelledby="education-tab">
+                <div class="content py-4">
+                  <div class="heading d-flex align-items-center justify-content-between">
+                    <div class="left">
+                      <h3>Make Your Single Page</h3>
+                      <h6>Elementor / WPBakery</h6>
+                    </div>
+                    <div class="right">
+                      <span class="text-danger">$30.00</span>
+                    </div>
+                  </div>
+                  <p class="py-4">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                    necessary</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="left">
+                      <ul>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          1 Page with Elementor
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Design Customization
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Responsive Design
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Content Upload
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Design Customization
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          2 Plugins/Extensions
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="right">
+                      <ul>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Multipage Elementor
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Design Figma
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          MAintaine Design
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Content Upload
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Design With XD
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          8 Plugins/Extensions
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="w-100 text-danger my-3">ORDER NOW <i class="fa-solid fa-arrow-right"></i></button>
+                  <div class="d-flex px-5 py-3 justify-content-between">
+                    <h5>
+                      <i class="fa-regular fa-clock"></i>
+                      2 Days Delivery
+                    </h5>
+                    <h5>
+                      <i class="fa-solid fa-wave-square"></i>
+                      Unlimited Revission
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade text-light" id="standard" role="tabpanel" aria-labelledby="skill-tab">
+                <div class="content py-4">
+                  <div class="heading d-flex align-items-center justify-content-between">
+                    <div class="left">
+                      <h3>Make Your Single Page</h3>
+                      <h6>Elementor / WPBakery</h6>
+                    </div>
+                    <div class="right">
+                      <span class="text-danger">$30.00</span>
+                    </div>
+                  </div>
+                  <p class="py-4">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                    necessary</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="left">
+                      <ul>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          1 Page with Elementor
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Design Customization
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Responsive Design
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Content Upload
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Design Customization
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          2 Plugins/Extensions
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="right">
+                      <ul>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Multipage Elementor
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Design Figma
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          MAintaine Design
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Content Upload
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Design With XD
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          8 Plugins/Extensions
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="w-100 text-danger my-3">ORDER NOW <i class="fa-solid fa-arrow-right"></i></button>
+                  <div class="d-flex px-5 py-3 justify-content-between">
+                    <h5>
+                      <i class="fa-regular fa-clock"></i>
+                      2 Days Delivery
+                    </h5>
+                    <h5>
+                      <i class="fa-solid fa-wave-square"></i>
+                      Unlimited Revission
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade text-white-50" id="premium" role="tabpanel" aria-labelledby="experience-tab">
+                <div class="content py-4">
+                  <div class="heading d-flex align-items-center justify-content-between">
+                    <div class="left">
+                      <h3>Make Your Single Page</h3>
+                      <h6>Elementor / WPBakery</h6>
+                    </div>
+                    <div class="right">
+                      <span class="text-danger">$30.00</span>
+                    </div>
+                  </div>
+                  <p class="py-4">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                    necessary</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="left">
+                      <ul>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          1 Page with Elementor
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Design Customization
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Responsive Design
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Content Upload
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Design Customization
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          2 Plugins/Extensions
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="right">
+                      <ul>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Multipage Elementor
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Design Figma
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          MAintaine Design
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Content Upload
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          Design With XD
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i>
+                          8 Plugins/Extensions
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="w-100 text-danger my-3">ORDER NOW <i class="fa-solid fa-arrow-right"></i></button>
+                  <div class="d-flex px-5 py-3 justify-content-between">
+                    <h5>
+                      <i class="fa-regular fa-clock"></i>
+                      2 Days Delivery
+                    </h5>
+                    <h5>
+                      <i class="fa-solid fa-wave-square"></i>
+                      Unlimited Revission
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- horizontal line -->
+  <div class="container py-5">
+    <hr class="text-light">
+  </div>
+
+  <!-- blog -->
+  <section class="portfolio">
+    <div class="container">
+      <div class="title">
+        <span>VISIT MY BLOG AND KEEP YOUR FEEDBACK</span>
+        <h2 class="pt-2 pb-5">My Blog</h2>
+      </div>
+      <div class="row g-5">
+        <div class="col-4">
+          <div class="card p-5">
+            <div class="card-img">
+              <img
+                src="img/marketing-young-cute-business-lady-striped-shirt-office-showing-raising-results-1-340x250.jpg"
+                class="card-img-top" alt="">
+            </div>
+            <div class="card-body justify-content-between d-flex pt-4">
+              <span class="d-block">DEVELOPMENT</span>
+              <a href="#">
+                <i class="fa-regular fa-clock"></i>
+                4 min read
+              </a>
+            </div>
+            <div class="card-title pt-3">
+              <a href="#">
+                The Best Ways to Do Market Research For Your Business Plan.
+                <i class="fa-solid fa-arrow-up ps-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card p-5">
+            <div class="card-img">
+              <img src="img/pretty-curly-young-woman-writing-notes-startup-project-340x250.jpg" class="card-img-top"
+                alt="">
+            </div>
+            <div class="card-body justify-content-between d-flex pt-4">
+              <span class="d-block">QUOTE</span>
+              <a href="#">
+                <i class="fa-regular fa-clock"></i>
+                4 min read
+              </a>
+            </div>
+            <div class="card-title pt-3">
+              <a href="#">
+                The Easiest Way to Become a Successful Writer and Authors.
+                <i class="fa-solid fa-arrow-up ps-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card p-5">
+            <div class="card-img">
+              <img src="img/road-sign-direction-perforated-paper-arrow-340x250.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body justify-content-between d-flex pt-4">
+              <span class="d-block">TECHNICIAN</span>
+              <a href="#">
+                <i class="fa-regular fa-clock"></i>
+                4 min read
+              </a>
+            </div>
+            <div class="card-title pt-3">
+              <a href="#">
+                The Quickest Way to Deliver Your Message? Make It Visual.
+                <i class="fa-solid fa-arrow-up ps-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- horizontal line -->
+  <div class="container pt-5 pb-5 ">
+    <hr class="text-light">
+  </div>
+
+  <!-- contact us -->
+  <section class="contact">
+    <div class="container">
+      <div class="title">
+        <span>CONTACT</span>
+        <h2 class="pt-2 pb-5">Contact With Me</h2>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="card p-5">
+            <div class="card-img">
+              <img src="img/contact1.png" class="card-img-top" alt="">
+            </div>
+            <div class="card-body pt-4">
+              <span>Nevine Acotanza</span>
+              <h5 class="text-white-50 pt-3">Chief Operating Officer</h5>
+              <p class="text-white-50 pt-3 pb-3">I am available for freelance work. Connect with me via and call in to
+                my account.</p>
+              <h5 class="text-white-50">Phone: <span>+012 345 678 90</span></h5>
+              <h5 class="text-white-50">Email: <span>admin@example.com</span></h5>
+              <h6 class="text-white-50 pt-3">FIND WITH ME</h6>
+              <div class="row pt-3">
+                <div class="box1">
+                  <div><i class="fa-brands fa-instagram text-white"></i></div>
+                </div>
+                <div class="box1 mx-4">
+                  <div><i class="fa-brands fa-twitter text-white"></i></div>
+                </div>
+                <div class="box1">
+                  <div><i class="fa-brands fa-linkedin-in text-white"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="form">
+            <form class="row g-4">
+              <div class="col-md-6">
+                <label for="validationServer01" class="form-label text-white-50">Your Name</label>
+                <input type="text" class="form-control text-white" id="validationServer01" required>
+                <div class="valid-feedback">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationServer02" class="form-label text-white-50">Phone Number</label>
+                <input type="number" class="form-control text-white" id="validationServer02" required>
+              </div>
+              <div class="col-md-12">
+                <label for="validationServerUsername" class="form-label text-white-50">Email</label>
+                <div class="input-group has-validation">
+                  <span id="inputGroupPrepend3"></span>
+                  <input type="email" class="form-control text-white" id="validationServerUsername" required>
+                  <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationServer03" class="form-label text-white-50">Subject</label>
+                <input type="text" class="form-control text-white" id="validationServer03"
+                  aria-describedby="validationServer03Feedback" required>
+                <div id="validationServer03Feedback" class="invalid-feedback">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationTextarea" class="form-label text-white-50">Your Message</label>
+                <textarea class="form-control text-white" rows="5" id="validationTextarea" required></textarea>
+                <div class="col-12 py-4">
+                  <button class="d-block w-100 submit" type="submit">SEND MESSAGE</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- horizontal line -->
+  <div class="container pt-5 pb-5 ">
+    <hr class="text-light">
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <img src="img/logo(1).png" alt="" class="py-3">
+          <div class="row pt-3">
+            <div class="box1">
+              <div><i class="fa-brands fa-instagram text-white"></i></div>
+            </div>
+            <div class="box1 mx-4">
+              <div><i class="fa-brands fa-twitter text-white"></i></div>
+            </div>
+            <div class="box1">
+              <div><i class="fa-brands fa-linkedin-in text-white"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <span>QUICK LINK</span>
+          <ul class="pt-3">
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <span>Resources</span>
+          <ul class="pt-3">
+            <li>
+              <a href="#">Authentication</a>
+            </li>
+            <li>
+              <a href="#">System Status</a>
+            </li>
+            <li>
+              <a href="#">Terms of Service</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Over Right</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <span>Developers</span>
+          <ul class="pt-3">
+            <li>
+              <a href="#">Documentation</a>
+            </li>
+            <li>
+              <a href="#">Authentication</a>
+            </li>
+            <li>
+              <a href="#">API Reference</a>
+            </li>
+            <li>
+              <a href="#">Support</a>
+            </li>
+            <li>
+              <a href="#">Open Source</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- horizontal line -->
+  <div class="container pt-5 pb-2 ">
+    <hr class="text-light">
+  </div>
+
+
+  <p class="last">© 2023. All rights reserved by Rainbow-Themes</p>
+
+
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- <script src="js/wow.min.js"></script> -->
+  <script>
+    new WOW().init();
+  </script>
+  <!-- <script src="js/popper.min.js"></script> -->
+
+
+</body>
+
+</html>
